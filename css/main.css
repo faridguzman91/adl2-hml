@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: max-content;
+    background-color: rgb(221, 221, 221);
+    padding: 30px;
+}
+
+.filters {
+    padding: 10px 40px 10px 40px;
+    line-height: 1.2em;
+    background-color: #F5F5F5;
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
