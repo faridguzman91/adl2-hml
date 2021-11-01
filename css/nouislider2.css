@@ -5,7 +5,7 @@
   }
 
   .slider1{
-     width: 15%;
+     
      padding: 10px;
      font-size: 13px;
      top: 12px;
@@ -14,7 +14,7 @@
   
 
   .slider2{
-width: 15%;
+
 padding: 10px;
 font-size: 13px;
 top: 12px;
@@ -87,7 +87,7 @@ position: relative;
     left: -7px;
     top: -7px;
     background-color: #fff;
-    border: 2px solid #2db5ab;
+    border: 3px solid #2db5ab;
     }
   
   /* Styling;
