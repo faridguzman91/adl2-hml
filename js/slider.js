@@ -3,7 +3,7 @@
 // Initialize slider:
 $(document).ready(function() {
   $('.noUi-handle').on('click', function() {
-    $(this).width(50);
+    $(this).width(12);
   });
   var rangeSlider = document.getElementById('slider-range');
   var moneyFormat = wNumb({

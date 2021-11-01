@@ -17,6 +17,8 @@ header {
 }
 
 .filters {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 40px 10px 40px;
     line-height: 1.2em;
     background-color: #F5F5F5;
@@ -24,4 +26,99 @@ header {
     z-index: 2;
     border-top: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8;
+}
+
+.slider1{
+    width: 10%;
+    position: relative;
+}
+
+.slider2{
+    width: 10%;
+}
+
+select{
+    width: 200px;
+}
+
+.select1{
+    margin: 15px;
+}
+
+.select2 {
+    margin: 15px;
+}
+
+.select3 {
+    margin: 15px;
+}
+.select4 {
+    margin: 15px;
+}
+.select5 {
+    margin: 15px;
+}
+
+.viewport {
+    position: relative;
+}
+
+ .btn{
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 1.6rem;
+    line-height: 56px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: top;
+    z-index: 0;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.btn.color-secondary{
+    color: rgb(0, 0, 0);
+    background-color: #2db5ab
+}
+
+/* .btn.color-secondary::before{
+    background-color: black;
+} */
+
+#block-container {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: calc(100% - 600px);
+    float: left;
+}
+
+#block-container ul.tabbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    left: 40px;
+}
+
+#block-container ul.tabbar li {
+    display: inline-block;
+    margin: 0px 1px 0px 0px;
+    line-height: 20px;
+    padding: 10px 1rem 10px 1rem;
+    font-weight: 400;
+}
+
+#block-container ul.tabbar li.active::before{
+    background-color: #F12E38;
 }
