@@ -1,34 +1,20 @@
-<?php $debug = false ?>
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aan de lanen</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-    <link type="text/css" href="./css/nouislider.min.css" rel="stylesheet">
-    <link type="text/css" href="./css/style.min.css?<?php echo filemtime('./css/style.min.css'); ?>" rel="stylesheet">
-    <?php
-	if ($debug == true) {
-		echo '<script type="text/javascript">var debug=true;</script>';
-		$files = glob("../source/*.js");
-		sort($files);
-		foreach ($files as $file) {
-			echo '<script type="text/javascript" src="' . $file . '"></script>';
-		}
-	} else {
-		echo '<script type="text/javascript">var debug=false;</script>';
-		echo '<script type="text/javascript" src="./js/generic-min.js?' . filemtime('./js/generic-min.js') . '"></script>';
-		//echo '<script type="text/javascript">if(console && console.log)console.log=function(){}</script>';
-	}
-	?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aan de lanen</title>
+    <link type="text/css" href="./css/style.css" rel="stylesheet">
+    <link type="text/css" href="./css/nice-select2.css" rel="stylesheet">
+                <script src="./js/generic.js"></script>
+    <script src="./js/jquery.nice-select.js"></script>
+    <script src="./js/nouislider.js"></script>
 </head>
 
 <body>
-    <div id="container" class="clearfix init animation">
+     <div id="container" class="clearfix init animation">
         <header class="clearfix">
             <img width="31" height="45" src="./img/amsterdam-sloterdijk-mo-town-logo-100px.png" alt="Logo">
             <ul>
@@ -91,34 +77,34 @@
                 <div id="block-next" class="btn color-secondary block-button"><img src="./img/button-next.svg"></div>
                 <div class="unit-selector">
                     <div class="unit-content">
-                        <?php
-						$svg = file_get_contents('./img/31608 - Ext 01-small.svg'); //west
-						echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
-                        ?>
+                        <!-- <?php
+			$svg = file_get_contents('./img/31608 - Ext 01-small.svg');//west
+			echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
+                        ?> -->
                     </div>
                 </div>
                 <div class="unit-selector">
                     <div class="unit-content">
-                        <?php
-						$svg = file_get_contents('./img/31608 - Ext 03-small.svg'); //zuidwest
-						echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
-                        ?>
+                        <!-- <?php
+			$svg = file_get_contents('./img/31608 - Ext 03-small.svg');//zuidwest
+			echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
+                        ?> -->
                     </div>
                 </div>
                 <div class="unit-selector">
                     <div class="unit-content">
-                        <?php
-						$svg = file_get_contents('./img/31608 - Ext 05-small.svg'); //zuid
-						echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
-                        ?>
+                        <!-- <?php
+			$svg = file_get_contents('./img/31608 - Ext 05-small.svg');//zuid
+			echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
+                        ?> -->
                     </div>
                 </div>
                 <div class="unit-selector">
                     <div class="unit-content">
-                        <?php
-						$svg = file_get_contents('./img/31608 - Ext 06-small.svg'); //oost
-						echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
-                        ?>
+                        <!-- <?php
+			$svg = file_get_contents('./img/31608 - Ext 06-small.svg');//oost
+			echo preg_replace('/\t|\n|\r/', '', preg_replace("#<!DOCTYPE[^>[]*(\[[^]]*\])?>#sim", "", $svg));
+                        ?> -->
                     </div>
                 </div>
             </div>
@@ -160,9 +146,12 @@
                     <a id="unit-contact-btn" href="https://www.nieuwbouw-motown.nl/service/contact"
                         class="btn btn-disabled color-secondary placeholder" target="bpd">Interesse? Neem contact
                         op!</a>
+
+
                 </div>
 
                 <div id="unit-list">
+
                     <div id="filter-message">
                         <h2>Geen woningen gevonden</h2>
                         <p>Er zijn geen woningen die voldoen aan jouw wensen. Pas je wensen in het zoekfilter aan.</p>
@@ -173,6 +162,11 @@
             </div>
         </div>
     </div>
+
+
 </body>
+
+
+
 
 </html>
